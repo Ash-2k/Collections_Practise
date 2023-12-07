@@ -46,7 +46,7 @@ public class Shipment implements Iterable<Product>
 
         // create two subviews of the list
         lightVanProducts = Collections.unmodifiableList(products.subList(0, splitPoint));
-        heavyVanProducts = products.subList(splitPoint, products.size());
+        heavyVanProducts = Collections.unmodifiableList(products.subList(splitPoint, products.size()));
     }
 
     private int findSplitPoint()

@@ -46,8 +46,8 @@ public class ViewsOverMaps
 //            entry.setValue(ProductFixtures.window);
         }
 
-        Map.Entry<Integer, Product> entry = Map.entry(3, ProductFixtures.window);
-        entries.add(entry);
+//        Map.Entry<Integer, Product> entry = Map.entry(3, ProductFixtures.window);
+//        entries.add(entry);
 
         System.out.println(idToProduct);
     }

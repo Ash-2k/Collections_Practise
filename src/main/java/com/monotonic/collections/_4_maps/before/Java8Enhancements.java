@@ -15,5 +15,11 @@ public class Java8Enhancements
         idToProduct.put(2, ProductFixtures.floorPanel);
         idToProduct.put(3, ProductFixtures.window);
 
+        Product product = idToProduct.getOrDefault(4, defaultProd);
+//        System.out.println(product);
+
+        System.out.println(idToProduct.toString());
+        idToProduct.replaceAll((id, prod) -> new Product(id, prod.getName(), prod.getWeight()+10));
+        System.out.println(idToProduct.toString());
     }
 }
