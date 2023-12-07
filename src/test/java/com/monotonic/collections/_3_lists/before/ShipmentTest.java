@@ -1,4 +1,4 @@
-package com.monotonic.collections._3_lists.after;
+package com.monotonic.collections._3_lists.before;
 
 import com.monotonic.collections.common.Product;
 import org.junit.Test;
@@ -40,6 +40,7 @@ public class ShipmentTest
     public void shouldNotReplaceMissingItems()
     {
         shipment.add(window);
+        for(var temp:shipment) System.out.println(temp.toString());
 
         assertFalse(shipment.replace(door, floorPanel));
 
